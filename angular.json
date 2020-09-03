@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": ["highcharts"],
             "outputPath": "dist/common-chart",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "common-chart"
+    }
+  },
+  "defaultProject": "common-chart",
+  "cli": {
+    "analytics": "77fd1127-47fa-4ffc-97e6-201208fddf42"
+  }
 }
