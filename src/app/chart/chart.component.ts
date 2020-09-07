@@ -18,7 +18,6 @@ export class ChartComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.chartConfiguation);
     this.chartOptions = {
       chart: {
         type: (this.chartConfiguation.type) ? this.chartConfiguation.type : ''
@@ -49,15 +48,6 @@ export class ChartComponent implements OnInit {
       plotOptions: (this.chartConfiguation.plotOptions) ? this.chartConfiguation.plotOptions : {},
       series: (this.chartConfiguation.series) ? this.chartConfiguation.series : []
     };
-    /**
-     * Creating new Object
-     */
-    // this.chartOptions = {...this.chartOptions, ...this.chartConfiguation.data};
-    // HC_exporting(Highcharts);
-    /**
-     * If Exporting is needed enable below line
-     */
-    // HC_exportData(Highcharts);
 
     /**
      * After window resize only highcharts is properly setting up
